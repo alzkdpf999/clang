@@ -1,3 +1,2 @@
 ﻿  main.c
-C:\Users\Administrator\Desktop\c언어\7.14\7.14\main.c(8,1): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
   7.14.vcxproj -> C:\Users\Administrator\Desktop\c언어\7.14\x64\Debug\7.14.exe
