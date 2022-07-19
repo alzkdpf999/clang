@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\Administrator\Desktop\c수업\0719\main.c(38,2): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\c수업\0719\main.c(53,11): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
+  0719.vcxproj -> C:\Users\Administrator\Desktop\c수업\0719\x64\Debug\0719.exe

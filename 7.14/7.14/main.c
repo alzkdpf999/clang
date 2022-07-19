@@ -2,6 +2,7 @@
 //기능들을 무시하는
 #include <stdio.h>
 
+//매크로
 #define intinput(text, value) printf(text); scanf("%d",&value);
 #define floatinput(text, value) printf(text); scanf("%f",&value);
 #define charinput(text, value) printf(text); scanf("%s",value);
