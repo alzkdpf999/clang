@@ -1,14 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <stdlib.h> //rand Æ÷ÇÔÇÏ´Â ¶óÀÌºê·¯¸®
-#include <string.h> // ¹®ÀÚ¿­ ±â´É
-//±ÛÀÚÀÇ ¸¶Áö¸· -> ³Î¹®ÀÚ(NULL)¸¦ °¡Áö°í ÀÖÀ½;
+#include <stdlib.h> //rand í¬í•¨í•˜ëŠ” ë¼ì´ë¸ŒëŸ¬ë¦¬
+#include <string.h> // ë¬¸ìì—´ ê¸°ëŠ¥
+//ê¸€ìì˜ ë§ˆì§€ë§‰ -> ë„ë¬¸ì(NULL)ë¥¼ ê°€ì§€ê³  ìˆìŒ;
 int main() {
-	srand(time(NULL)); //½Ã°£ÀÇ µû¶ó ´Ù¸¥ ½Ãµå¸¦ ½á¼­ ·£´ı ¼ıÀÚ¸¦ º¯ÇÏ°Ô ÇØÁØ´Ù.
+	srand(time(NULL)); //ì‹œê°„ì˜ ë”°ë¼ ë‹¤ë¥¸ ì‹œë“œë¥¼ ì¨ì„œ ëœë¤ ìˆ«ìë¥¼ ë³€í•˜ê²Œ í•´ì¤€ë‹¤.
 	/*int(4Byte) float(4Byte), char (1Byte) short(2Byte) long long(8Byte)*/
-	//¹è¿­
-	int a[2] = { 1,2 };// ÃÊ±âÈ­ ÇÑ¹ø¸¸ °¡´É 
-	//a[2] = {1,2} //a[2] -> aÀÇ ¹è¿­ÀÇ ½ÃÀÛºÎÅÍ 2Ä­ µÚ¿¡ ÀÖ´Â Ä­ µû¶ó¼­ ºÒ°¡´É
+	//ë°°ì—´
+	int a[2] = { 1,2 };// ì´ˆê¸°í™” í•œë²ˆë§Œ ê°€ëŠ¥ 
+	//a[2] = {1,2} //a[2] -> aì˜ ë°°ì—´ì˜ ì‹œì‘ë¶€í„° 2ì¹¸ ë’¤ì— ìˆëŠ” ì¹¸ ë”°ë¼ì„œ ë¶ˆê°€ëŠ¥
 
 	int b[100];
 	for (int i = 0; i < 100; i++) {
@@ -18,9 +18,9 @@ int main() {
 
 	//int c[10], input, max = -2100000000, min = 2100000000;
 	//for (int i = 0; i < 10; i++) {
-	//	//printf("ÀÔ·Â:");
+	//	//printf("ì…ë ¥:");
 	//	//scanf("%d", &input);
-	//	c[i] = rand() % 46; //·£´ı ¼ıÀÚ ³Ö±â
+	//	c[i] = rand() % 46; //ëœë¤ ìˆ«ì ë„£ê¸°
 	//	if (max < c[i]) max = c[i];
 	//	if (min > c[i]) min = c[i];
 	//}
@@ -32,10 +32,10 @@ int main() {
 	//printf("%d", 'A');
 	//printf("hello world");
 	////72 68 68 92 96
-	////"ASVSASDQEZ" // -> ¹è¿­ 
+	////"ASVSASDQEZ" // -> ë°°ì—´ 
 	//system("cls");
-	//char d[4] = { 'a','b','c'};// "abc" °¡´É d[3]¿¡´Â NULLÀÌ µé¾î°¡ ÀÖÀ½
-	//scanf("%s", d);//¹®ÀÚ´Â &¾øÀÌ 
+	//char d[4] = { 'a','b','c'};// "abc" ê°€ëŠ¥ d[3]ì—ëŠ” NULLì´ ë“¤ì–´ê°€ ìˆìŒ
+	//scanf("%s", d);//ë¬¸ìëŠ” &ì—†ì´ 
 	//printf("%s\n", d);
 	//printf("%d %d %d %d\n", d[0], d[1], d[2], d[3]);
 	//
@@ -48,54 +48,59 @@ int main() {
 		a[0]="m"
 		a[1]="c"
 		a[2]="d"
-		a[3]= 0 null¹®ÀÚ
+		a[3]= 0 nullë¬¸ì
 		strcpy(a,"CMP");
 	*/
 	strcpy(k, "CMP");
 	printf("%s", k);
-	//³» Á¤º¸ ÀÔ·Â ¹× Ãâ·Â ÇÁ·Î±×·¥
-	//³»ÀÌ¸§ ³» ÇĞ±³ ³» ÇĞ¹ø ³» ¼ºÀû ÀÔ·Â¹Ş¾Æ Ãâ·Â 
-	//³» ¼ºÀûÀÇ ÃÑÁ¡°ú Æò±Õµµ Ãâ·Â
+	//ë‚´ ì •ë³´ ì…ë ¥ ë° ì¶œë ¥ í”„ë¡œê·¸ë¨
+	//ë‚´ì´ë¦„ ë‚´ í•™êµ ë‚´ í•™ë²ˆ ë‚´ ì„±ì  ì…ë ¥ë°›ì•„ ì¶œë ¥ 
+	//ë‚´ ì„±ì ì˜ ì´ì ê³¼ í‰ê· ë„ ì¶œë ¥
 
 	int score[5], ssn, in;
 	int sum = 0;
 	char schoolName[20], name[10];
-	printf("ÀÌ¸§:"); scanf("%s", name);
-	printf("ÇĞ±³ ÀÌ¸§:"); scanf("%s", schoolName);
-	printf("ÇĞ¹ø:"); scanf("%d", &ssn);
+	printf("ì´ë¦„:"); scanf("%s", name);
+	printf("í•™êµ ì´ë¦„:"); scanf("%s", schoolName);
+	printf("í•™ë²ˆ:"); scanf("%d", &ssn);
 	for (int i = 0; i < 5; i++) {
 		switch (i) {
 		case 0:
-			printf("%s", "¼öÇĞ");
+			printf("%s", "ìˆ˜í•™");
 			scanf("%d", &in);
 			score[i] = in;
 			sum += in;
 			break;
 		case 1:
-			printf("%s", "¿µ¾î");
+			printf("%s", "ì˜ì–´");
 			scanf("%d", &in);
 			score[i] = in;
 			sum += in;
 			break;
 		case 2:
-			printf("%s", "»çÈ¸");
+			printf("%s", "ì‚¬íšŒ");
 			scanf("%d", &in);
 			score[i] = in;
 			sum += in;
 			break;
 		case 3:
-			printf("%s", "°úÇĞ");
+			printf("%s", "ê³¼í•™");
 			scanf("%d", &in);
 			score[i] = in;
 			sum += in;
 			break;
 		default:
-			printf("%s", "±¹¾î");
+			printf("%s", "êµ­ì–´");
 			scanf("%d", &in);
 			score[i] = in;
 			sum += in;
 
 		}
 	}
-		printf("| ÀÌ¸§ : %s | ÇĞ±³ ¸í : %s | ÇĞ¹ø : %d | ¼öÇĞ : %d | ¿µ¾î : %d | »çÈ¸ :%d | °úÇĞ : %d | ±¹¾î : %d | ÃÑÁ¡ : %d | Æò±Õ : %.2f|", name, schoolName, ssn, score[0], score[1], score[2], score[3], score[4], sum, (float)sum / 5);
+		printf("| ì´ë¦„ : %s | í•™êµ ëª… : %s | í•™ë²ˆ : %d | ìˆ˜í•™ : %d | ì˜ì–´ : %d | ì‚¬íšŒ :%d | ê³¼í•™ : %d | êµ­ì–´ : %d | ì´ì  : %d | í‰ê·  : %.2f|", name, schoolName, ssn, score[0], score[1], score[2], score[3], score[4], sum, (float)sum / 5);
+	char str[5000]
+	scanf("%[],str); //[]ì•ˆì—ë‹¤ê°€ ë„£ì€ ê²ƒë“¤ë§Œ ë‚˜ì˜¤ê²Œ í•¨ ^ë¥¼ ì•ì— ë¶™ì´ë©´([^])ê·¸ ë¬¸ìë¥´ ì œì™¸í•œ ìˆ˜ ë°›ëŠ”ë‹¤
+	scanf("%[^\n]",str)// == gets_s(str,5000);ê°™ë‹¤
+	
+	
 }
