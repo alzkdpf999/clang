@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\Administrator\Desktop\c수업\0720\main.c(7,8): warning C4013: 'time'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  0720.vcxproj -> C:\Users\Administrator\Desktop\c수업\0720\x64\Debug\0720.exe
