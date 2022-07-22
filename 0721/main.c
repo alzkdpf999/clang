@@ -168,8 +168,10 @@ int main() {
 	// &w != &r == rr
 	// &w != &r != &rr
 	w = &r;
-	printf("%d\n", *r);
-	pritnf("%d\n", &r); 
+	printf("%d\n", *r);//55번쨰 줄과 같은 결과
+	printf("%d\n", &r);
+	printf("%d\n", **(int**)r); //w의 주소와 같은 결과
+	printf("%d\n", &w);
 	//밤에 영상 확인하면서 다시 체크
 
 
