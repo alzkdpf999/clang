@@ -1,3 +1,6 @@
+
+
+
 CREATE TABLE users (
 			user_id	NUMBER(3)	NOT NULL,
 			passwd	VARCHAR2(20)	NOT NULL,
